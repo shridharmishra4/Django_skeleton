@@ -114,10 +114,9 @@ $RECYCLE.BIN/
 
 .idea/
 PostProcessing/__pycache__/
-config/
 db.sqlite3
-templates/
 v1/__pycache__/
-v1/core/
 v1/migrations/__pycache__/
 v1/views/__pycache__/
+config/
+templates/
