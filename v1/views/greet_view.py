@@ -1,11 +1,13 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from ..core.helloworld import Greet
+from ..core.get_root import GetRoot
+
+
 
 
 class GreetView(APIView):
-    def get(self, request, name):
+    def get(self, request):
         """
         Greets you :)
 
@@ -17,8 +19,8 @@ class GreetView(APIView):
                 }
 
         """
-        greet = Greet(name)
+        greet = GetRoot()
         return Response({
-            "Greetings": greet.hello()
+            "Greetings": ""
 
         })
