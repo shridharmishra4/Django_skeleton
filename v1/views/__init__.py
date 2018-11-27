@@ -1,9 +1,7 @@
-from .match_values_view import MatchValuesView
 from .swagger_api_view import SwaggerSchemaView
-from .transcodified_view import TranscodifiedView
+from .GreetUser import GreetView
 
 __all__ = (
     "SwaggerSchemaView",
-    "MatchValuesView",
-    "TranscodifiedView"
+    "GreetView"
 )

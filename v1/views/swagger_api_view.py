@@ -10,7 +10,7 @@ from rest_framework_swagger import renderers
 
 
 class MySchemaGenerator(SchemaGenerator):
-    title = "PostProcessing API"
+    title = "Sample API"
 
     def get_link(self, path, method, view):
         link = super().get_link(path, method, view)

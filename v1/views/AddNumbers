@@ -1,0 +1,21 @@
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
+
+class Add(APIView):
+    def get(self, request,number1,number2):
+        """
+        Greets you :)
+
+        **Example Response**
+
+                {
+                    "Result": "Number",
+
+                }
+
+        """
+        return Response({
+            "Result": float(number1) + float(number2)
+
+        })
